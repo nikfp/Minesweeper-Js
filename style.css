@@ -1,0 +1,166 @@
+:root {
+    --cell-color-covered: #a3a3a3;
+    --cell-color-uncovered: white;
+    --cell-border-light: #c2c2c2;
+    --cell-border-dark: #787878;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#main-content {
+    width: 100%;
+    height: 100%;
+}
+
+#game-area {
+    height: 100%;
+}
+
+#status-bar {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-box {
+    padding: 0 5px;
+    border: 3px solid black;
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.status-label {
+    margin: auto;
+}
+
+.arrow-button {
+    max-height: 100%;
+    display: block;
+    padding: 0 5px;
+}
+
+.arrow-button img {
+    height: 100%;
+}
+
+#game-board-container {
+    width: 90%;
+    margin: 0 auto;
+    height: 80%;
+}
+
+#game-board {
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.game-row {
+    width: 100%; 
+    display: flex;
+}
+
+.game-square {
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    background-color: var(--cell-color-uncovered);
+    border-top: 3px solid var(--cell-border-dark);
+    border-left: 3px solid var(--cell-border-dark);
+    border-right: 3px solid var(--cell-border-light);
+    border-bottom: 3px solid var(--cell-border-light);
+    align-items: center;
+    justify-content: center;
+}
+
+.game-square-covered {
+    background-color:var(--cell-color-covered);
+    border-top: 3px solid var(--cell-border-light);
+    border-left: 3px solid var(--cell-border-light);
+    border-right: 3px solid var(--cell-border-dark);
+    border-bottom: 3px solid var(--cell-border-dark);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.game-square:hover {
+    cursor: pointer;
+}
+
+#reset-button-box {
+    text-align: center;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#reset-button {
+    display: block;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.notification-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.show {
+    display: flex;
+}
+
+#notification-box {
+    /* width: fit-content; 
+    height: fit-content; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#notification-text-area {
+    font-size: x-large;
+    box-sizing: border-box;
+}
+
+#notification-text-area p {
+    text-align: center;
+    margin: 0 20px;
+}
+
+#notification-close-button {
+    border: 3px solid black;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+#notification-close-button:hover {
+    cursor: pointer;
+}

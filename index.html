@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper!</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="main-content">
+        <div id="game-area">
+            <div id="status-bar">
+                <div class="status-box">
+                    <div class="arrow-button">
+                        <img id="mine-button-up" src="button-up.svg" alt="Up Arrow Button for Mine Count">
+                    </div>
+                    <div class="status-label">Total Mines:</div>
+                    <div id="mine-total" class="status-label"></div>
+                    <div class="arrow-button">
+                        <img id="mine-button-down" src="button-down.svg" alt="Down Arrow Button for Mine Count">
+                    </div>
+                </div>
+                <div class="status-box">
+                    <div class="status-label">Flags placed:</div>
+                    <div id="flag-total" class="status-label"></div>
+                </div>
+                <div class="status-box">
+                    <div class="status-label">Time:</div>
+                    <div id="game-time" class="status-label"></div>
+                </div>
+                <div class="status-box">
+                    <div class="arrow-button">
+                        <img id="board-button-up" src="button-up.svg" alt="Up Arrow Button for Board Size">
+                    </div>
+                    <div class="status-label">Board Size:</div>
+                    <div id="board-size" class="status-label"></div>
+                    <div class="arrow-button">
+                        <img id="board-button-down" src="button-down.svg" alt="Down Arrow Button for Board Size">
+                    </div>
+                </div>
+            </div>
+            <div id="game-board-container">
+                <div id="game-board">
+                
+                </div>
+            </div>
+            <div id="reset-button-box">
+                <button id="reset-button">Reset</button>
+            </div>
+        </div>
+    </div>
+    <div id="notification-overlay" class="notification-overlay ">
+        <div id="notification-box" >
+            <div id="notification-text-area">
+            </div>
+            <div id="notification-close-button" >Close me!</div>
+        </div>
+    </div>
+    <script src="scripts.js" rel=""></script>
+</body>
+</html>
